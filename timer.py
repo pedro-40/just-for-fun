@@ -54,6 +54,10 @@ while True:
                 break
               
     elif 'n' == choice.lower() :
+        if name=="nt":
+            system("cls")
+        else:
+            system("clear")
         break
     
     else:
