@@ -17,6 +17,15 @@ while True:
         s=int(input("a few seconds..."))
         i=input("enter music directory...")
         M=input("music name ...")
+
+        if h < 0 or m < 0 or s < 0:
+            print(Fore.RED+"please enter a positive number...")
+            time.sleep(5)
+            if name=="nt":
+                system("cls")
+            else:
+                system("clear")
+            continue
         
         if s >= 60:
             w = s // 60
